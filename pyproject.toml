@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "web-migration-assistant"
+version = "0.1.0"
+description = "An LLM based web migration tool to switch between diferent frameworks. The goal is to automate the migration of large projects."
+authors = ["Radhakrishna Sanka <rkrishnasanka@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "web_migration_assistant"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+guidance = "^0.0.64"
+langchain = "^0.0.285"
+click = "^8.1.7"
+chroma = "^0.2.0"
+openai = "^0.28.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.5.1"
+black = "^23.9.1"
+isort = "^5.12.0"
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
