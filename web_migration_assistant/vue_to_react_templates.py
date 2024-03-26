@@ -15,14 +15,10 @@ Here is the following UI component in {framework_from}:
 You need to convert it into a UI component in {framework_to}:
 
 1. Also preserve variable names where possible.
-2. Utilize the following UI libraries for the conversion, especially when it comes to replacing components from 'vuetify' in {framework_from}:
-- @mui/material 
-- @emotion/react 
-- @emotion/styled
+2. For all the "vuetify" components in the code replace with HTML elements using tailwind CSS classes.
 3. Insert comments where necessary.
 4. Ensure that the output is in {language}.
-
-3. Here's a template as to how you should structure your code:
+5. Here's a template as to how you should structure your code:
 ```
 {output_structure_template}
 ```
